@@ -1,0 +1,20 @@
+@import '../../common/colors.scss';
+
+.header {
+    background-color: $secondary-color;
+    height: 72px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_logo {
+    color: $font-primary;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header_user-image, .header_user-image img {
+    height: 38px;
+}

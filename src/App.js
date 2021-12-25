@@ -37,5 +37,3 @@ function Layout() {
 }
 
 export default App;
-
-// http://www.omdbapi.com/?i=tt3896198&apikey=202448a9

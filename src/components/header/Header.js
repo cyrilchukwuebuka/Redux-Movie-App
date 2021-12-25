@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className='header'>
             <Link to='/'>
-                <div className="header_logo">Movie App</div>
+                <div className="header_logo">🎥 Movie App</div>
             </Link>
 
             <div className="header_user-image">

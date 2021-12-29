@@ -29,14 +29,22 @@ function MovieListing() {
         <div className='movieListing__movie-wrapper'>
             <div className="movieListing__movie-list">
                 <h2>Movies</h2>
+                <div className="movieListing__border-line"></div>
                 <div className="movieListing__movie-container">
-                    {renderMovies}
+                    {Object.keys(movies).length === 0 ? 
+                        (<div className='movieListing__loading'>...Loading</div>)
+                    :
+                    renderMovies}
                 </div>
             </div>
             <div className="movieListing__movie-list">
                 <h2>Shows</h2>
+                <div className="movieListing__border-line"></div>
                 <div className="movieListing__movie-container">
-                    {renderShows}
+                    {Object.keys(shows).length === 0 ?
+                        (<div className='movieListing__loading'>...Loading</div>)
+                        :
+                        renderShows}
                 </div>
             </div>
         </div>

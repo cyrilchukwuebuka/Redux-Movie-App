@@ -26,7 +26,7 @@ function App() {
 
 function Layout() {
   return (
-    <div>
+    <div className='app'>
       <Header />
       <main className='app_container'>
         <Outlet />

@@ -9,12 +9,39 @@
     justify-content: space-between;
 }
 
-.header_logo {
+.header__logo {
     color: $font-primary;
     font-size: 20px;
     font-weight: 600;
 }
 
-.header_user-image, .header_user-image img {
+.header__user-image, .header__user-image img {
     height: 38px;
+}
+
+.header__search-bar{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+    form{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        button {
+            padding: 0 8px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        input {
+            font-size: 18px;
+            width: 100%;
+            padding: 5px 5px 5px 10px;
+            height: 38px;
+            outline: none;
+        }
+    }
+
+
 }

@@ -6,10 +6,11 @@ import MovieListing from '../movieListing/MovieListing'
 
 function Home() {
     const dispatch = useDispatch();
+    const searchText = 'Harry'
 
     useEffect(() => {
-        dispatch(fetchAsyncMovies())
-        dispatch(fetchAsyncShows())
+        dispatch(fetchAsyncMovies(searchText))
+        dispatch(fetchAsyncShows(searchText))
     }, [dispatch])
 
     return (

@@ -1,13 +1,15 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { getAllMovies, getAllShows } from '../../features/movies/movieSlice'
+import { getAllMovies, getAllShows, getLoader } from '../../features/movies/movieSlice'
 import './MovieListing.scss'
-
 import MovieCard from '../movieCard/MovieCard'
+import Slider from "react-slick"
+import { settings } from '../../common/settings'
 
 function MovieListing() {
     const movies = useSelector(getAllMovies)
     const shows = useSelector(getAllShows)
+    const loader = useSelector(getLoader)
     console.log(movies);
 
     let renderMovies = movies.Response === 'True' ? (
@@ -31,20 +33,26 @@ function MovieListing() {
                 <h2>Movies</h2>
                 <div className="movieListing__border-line"></div>
                 <div className="movieListing__movie-container">
-                    {Object.keys(movies).length === 0 ? 
+                    {loader ?
                         (<div className='movieListing__loading'>...Loading</div>)
-                    :
-                    renderMovies}
+                        :
+                        (
+                            <Slider {...settings}>{renderMovies}</Slider>
+                        )
+                    }
                 </div>
             </div>
             <div className="movieListing__movie-list">
                 <h2>Shows</h2>
                 <div className="movieListing__border-line"></div>
                 <div className="movieListing__movie-container">
-                    {Object.keys(shows).length === 0 ?
+                    {loader ?
                         (<div className='movieListing__loading'>...Loading</div>)
                         :
-                        renderShows}
+                        (
+                            <Slider {...settings}>{renderShows}</Slider>
+                        )
+                    }
                 </div>
             </div>
         </div>

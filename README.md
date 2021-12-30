@@ -6,8 +6,8 @@ This Project was built with the intention to help user quick search any movie or
 ## TECHNOLOGIES USED  
 *  [React](https://reactjs.org/)  
 *  [React-redux/Redux-toolkit](https://redux-toolkit.js.org/)
-*  [React Reveal](https://www.react-reveal.com/)
-*  [Styled Components](https://styled-components.com/)  
+*  [React Slick](https://react-slick.neostack.com/)
+*  [SASS](https://sass-lang.com/)  
 *  [MaterialUI](https://mui.com/)
 
 Here is the [live link](https://redux-movie-app-cyril.netlify.app/) to the project.

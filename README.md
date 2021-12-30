@@ -8,6 +8,6 @@ This Project was built with the intention to help user quick search any movie or
 *  [React-redux/Redux-toolkit](https://redux-toolkit.js.org/)
 *  [React Slick](https://react-slick.neostack.com/)
 *  [SASS](https://sass-lang.com/)  
-*  [MaterialUI](https://mui.com/)
+*  [FontAwesome](https://fontawesome.com/)
 
 Here is the [live link](https://redux-movie-app-cyril.netlify.app/) to the project.
